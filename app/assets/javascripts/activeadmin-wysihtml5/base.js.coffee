@@ -199,14 +199,5 @@
       $editor.data('editor', editor)
 
       $editor.trigger('activeadmin-wysihtml5:load')
-
-  $ ->
-    $('.activeadmin-wysihtml5:visible').activeAdminWysihtml5()
-    $("a").bind "click", ->
-      setTimeout(
-        -> $('.activeadmin-wysihtml5:visible').activeAdminWysihtml5()
-        50
-      )
-
 )(jQuery)
 
