@@ -44,8 +44,6 @@
         stylesheets: "/assets/activeadmin-wysihtml5/wysiwyg.css",
         parserRules: wysihtml5ParserRules
       })
-      
-      $editor.data('editor', editor)
 
       $button = $toolbar.find('a[data-wysihtml5-command=createLink]').click ->
         $modal = $editor.find(".modal-link").clone()
@@ -197,6 +195,10 @@
           false
         else
           true
+
+      $editor.data('editor', editor)
+
+      $editor.trigger('activeadmin-wysihtml5:load')
 
   $ ->
     $('.activeadmin-wysihtml5:visible').activeAdminWysihtml5()
