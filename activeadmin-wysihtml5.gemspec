@@ -12,7 +12,5 @@ Gem::Specification.new do |s|
   s.description = s.summary
 
   s.files = Dir["{app,config,db,lib,vendor}/**/*"] + ["MIT-LICENSE", "README.md"]
-
-  s.add_dependency "activeadmin"
 end
 
